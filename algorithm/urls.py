@@ -1,7 +1,8 @@
-
 from django.urls import path
 
-urlpatterns = [
-    path('demo/', include('algorithm.urls')),
+from . import views
 
-]
+urlpatterns = [
+    path('', views.home, name="homepage"),
+
+] 
